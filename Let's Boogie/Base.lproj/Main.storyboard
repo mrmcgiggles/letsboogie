@@ -41,19 +41,43 @@
                                     <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4G-zt-uJV"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBC-7k-bvY">
+                                <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Dan-5M-DPb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0p6-Hu-cQQ">
+                                <rect key="frame" x="137.5" y="387" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="meD-Pi-c8r"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nPI-i6-ozo" firstAttribute="top" secondItem="Ivk-K1-X7M" secondAttribute="bottom" constant="20" id="5X4-as-ma9"/>
+                            <constraint firstItem="0p6-Hu-cQQ" firstAttribute="top" secondItem="Kt1-N8-GFc" secondAttribute="bottom" constant="240" id="8KK-t9-DEH"/>
+                            <constraint firstItem="dBC-7k-bvY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C1l-fR-lhQ"/>
                             <constraint firstItem="Ivk-K1-X7M" firstAttribute="top" secondItem="Kt1-N8-GFc" secondAttribute="bottom" constant="50" id="Glh-92-xSr"/>
+                            <constraint firstItem="dBC-7k-bvY" firstAttribute="top" secondItem="Kt1-N8-GFc" secondAttribute="bottom" constant="171" id="REG-IX-5Tq"/>
                             <constraint firstItem="Kt1-N8-GFc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="106" id="UEP-lf-xKD"/>
                             <constraint firstItem="nPI-i6-ozo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZDc-vZ-szC"/>
                             <constraint firstItem="Ivk-K1-X7M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aKz-eF-zuf"/>
                             <constraint firstItem="Kt1-N8-GFc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbF-ol-dI4"/>
+                            <constraint firstItem="0p6-Hu-cQQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mg7-0R-Zvj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="Kt1-N8-GFc" id="1hX-IQ-awd"/>
+                        <outlet property="text1" destination="dBC-7k-bvY" id="ARZ-2T-GNp"/>
+                        <outlet property="text2" destination="0p6-Hu-cQQ" id="vOi-QV-hCc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

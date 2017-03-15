@@ -3,7 +3,7 @@
 //  Let's Boogie
 //
 //  Created by AJ Lodge on 3/14/17.
-//  Copyright © 2017 AJ Lodge. All rights reserved.
+//  Copyright © 2017 AJ Lodge. All rights reserved..
 //
 
 import UIKit
@@ -12,15 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
+        print(text1.text!)
+        print(text2.text!)
         
-        tapCount = tapCount + 1
-        
-        if tapCount >= 10 {
-            mainLabel.text = "PUSSY BOI DID IT 10 TIMEZ AND DEN SUM"
-        }
+        mainLabel.text = "Answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     @IBAction func buttonTapped2(_ sender: Any) {
         mainLabel.text = "git it Pussyboi did git it"
